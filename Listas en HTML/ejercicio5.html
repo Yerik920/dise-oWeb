@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lista</title>
+    <style>
+        /* CSS para la primera lista (Propiedades CSS separados) */
+        .list-separado ul {
+            list-style-type: none; /* Elimina el marcador por defecto (el círculo o cuadrado) */
+            padding-left: 0; /* Elimina el padding izquierdo por defecto del <ul> */
+        }
+
+        .list-separado li {
+            /* Usa un emoji SVG codificado en Base64 como imagen de marcador */
+            list-style-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSJvcGFjaXR5KDAuOCkiIGQ9Ik0yNTYgNjRjLTUxLjMgMC05Mi45IDQxLjYtOTIuOSA5Mi45czQxLjYgOTIuOSA5Mi45IDkyLjkgOTIuOS00MS42IDkyLjktOTIuOXMtNDEuNi05Mi45LTkyLjktOTIuOXptMCAzMjBjLTU2LjUgMC0xMjguMS0yMi45LTE2Mi4zLTU3LjNjLTM0LjItMzQuNC01MS4yLTgyLjMtNTEuMi0xMzMuNWMwLTczLjEgMzEuMi0xMTkuNS03Ny40LTE0NC44QzE2NS42IDIwLjYgMjMxLjIgMCAyNTYgMGMtMzEuMSAwLTcwLjEgMi4yLTgyLjMgMi44Yy00Ny4xIDIuNC04Ny4xIDEyLjctMTE4LjcgMzQuNGMtMjkuNyAyMC41LTUwLjkgNDctNTkuNiA3Ni4zYy04LjcgMjkuMi04LjcgNjEuOC03LjMgOTQuNEMzMS4yIDI1My43IDc1LjEgMzI3LjQgMTI3LjUgMzU2LjRjNDkuNSAyNy40IDEwOS45IDQxLjYgMTY3LjMgNDEuNiA0Ny42IDAgOTEuMi04LjUgMTI4LjItMjMuNmMzNy43LTE1LjQgNjYuNy0zOS44IDgyLjMtNzYuNGM0Mi41LTM2LjEgNjMuOC04MC44IDY1LjgtMTMwLjJjLS4xLTIuMi0uMi00LjYtLjMtNi41Yy0zLjQtNDEuNS0xNS41LTc5LjQtMzUuOS0xMDkuNC0yMC42LTMwLjEtNDcuNS00OS40LTc4LjUtNjAuMi0yMy45LTguNS00OS4yLTEyLjgtNzUuMy0xMy41LTQ2LjMgMS43LTkxLjQgMTUuNC0xMjkuMiAzOS40QzE0My42IDg2LjYgMjk5LjggNDQ0LjkgNTQ0LjMgMzkxLjhjLTYuMyAzLjgtMTIuNiA3LjUtMTkgMTAuOWMtMzYuNyAyMC40LTc3LjggMzcuNC0xMjEuNSA0OWM0LjIgMS4zIDguNCAyLjcgMTIuNiA0LjJjNDMuMyAxNS44IDg2LjcgMzEuNyAxMjcuNyA1MC40bDEuMy0uMmMtNzcuOSA3Mi41LTE1MS45IDEwMC4xLTIyNC4zIDEwMC4xLTc2LjYgMC0xNzEuNC01NS44LTIyMi40LTE1OC40Yy02LjUtMTMtMTIuOC0yNi41LTE4LjgtNDAuNEM1MC43IDQwNy43IDAgNDM3LjIgMCA0NjQuNWMwIDMzLjMgNDAuMSAzMy4zIDQwLjEgMzMuM2M0Ni4zIDAgMTQwLjYgMC4zIDE0MC42IDAuMyAxLjQgOS41IDMuNCAxOC41IDUuNiAyNy4yYy0xOC4zIDE2LjctMzcgMjcuMy01Ny4xIDM0LjRjLTMuOCAxLjMtNy41IDIuNi0xMS4zIDMuOWMtNzguNyAxMy45LTE1MC43IDIwLjgtMjE1LjMgMjAuOC0xMi42IDAtMjguMy0yLjEtNDMuNi02LjJjLTM5LjQtMTAuNi02Ny40LTI4LTgyLjUtNDguNEM1LjggNDM0LjUgMCA0MTcuOCAwIDQxMi44YzAtNC41IDIuMy04LjUgNi44LTExLjVjMjcuMi0xOC4yIDYwLjEtMzUuMiA4Ny44LTQ5LjZsLS4yLS4yYy0xMC41LTMuNy0yMS4yLTcuMi0zMS45LTEwLjZjLTE1LjYtNC45LTMxLjgtOC42LTQ4LjItMTEuMmwtLjQtLjJhODcuMSA4Ny4xIDAgMCAxLTIxLjQtNS40Yy00Ni44LTE2LjMtODQuMi0zNC44LTg0LjItMzQuOGwzMS4yLTE1LjZjNDMuOS0yMS44IDg2LjYtMzcuNSAxMjUuNi00Ni41Yy0xLjgtMi40LTMuNS00LjktNS4yLTcuNGMxLjctMi40IDMuNC00LjkgNS4yLTcuNGw3My43LTI3LjJjLTczLjItMTAuNy0xNDkuNi02MS4zLTE4NC4yLTk2LjNjLTIxLjctMjIuMi0zNi40LTQ1LjktNDQtNzEuNGMwLTEyLjcgNS4zLTI1LjEgMTcuNS0zMy4yYzEwLjktNy40IDI1LjItOS42IDM3LjgtMy44YzEyLjYgNS44IDE5LjEgMTguNiAxNC45IDMxLjJjLTcuOSAxOS41LTE5LjcgMzYuNC0zNS42IDUwLjFjMTcuNyAxMiAyOC4zIDE5LjMgNDAgMjIuNnptLTEyOC0zMi4yYy02LjUtMjIuOS0xMy45LTQ1LjctMjIuMi02Ny44Yy04LjMtMjIuMi0xNy43LTQzLjctMjctNjQuNmMtMTIuNC0yNS42LTE4LjgtNTItMTguOC03OS41YzAtMjkuMyA2LjEtNTguMSA0MS43LTc3LjdjMjguNC0xNi4xIDU2LjMtMTkuNiA4My4xLTEwLjZjNDcuMyAxNy42IDcxLjggNzcuNCA0MyAxNTcuOGwtLjIuMiIvPjwvc3ZnPg==');
+            list-style-position: inside; /* Posiciona el marcador dentro del cuadro de contenido del ítem */
+            line-height: 2; /* Espaciado entre líneas para mejor legibilidad */
+        }
+
+        /* CSS para la segunda lista (Propiedades CSS juntas) */
+        .list-junta ul {
+            /* Usa la propiedad abreviada para configurar todo en una línea */
+            list-style: inside url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48cGF0aCBmaWxsPSJvcGFjaXR5KDAuOCkiIGQ9Ik0yNTYgNjRjLTUxLjMgMC05Mi45IDQxLjYtOTIuOSA5Mi45czQxLjYgOTIuOSA5Mi45IDkyLjkgOTIuOS00MS42IDkyLjktOTIuOXMtNDEuNi05Mi45LTkyLjktOTIuOXptMCAzMjBjLTU2LjUgMC0xMjguMS0yMi45LTE2Mi4zLTU3LjNjLTM0LjItMzQuNC01MS4yLTgyLjMtNTEuMi0xMzMuNWMwLTczLjEgMzEuMi0xMTkuNS03Ny40LTE0NC44QzE2NS42IDIwLjYgMjMxLjIgMCAyNTYgMGMtMzEuMSAwLTcwLjEgMi4yLTgyLjMgMi44Yy00Ny4xIDIuNC04Ny4xIDEyLjctMTE4LjcgMzQuNGMtMjkuNyAyMC41LTUwLjkgNDctNTkuNiA3Ni4zYy04LjcgMjkuMi04LjcgNjEuOC03LjMgOTQuNEMzMS4yIDI1My43IDc1LjEgMzI3LjQgMTI3LjUgMzU2LjRjNDkuNSAyNy40IDEwOS45IDQxLjYgMTY3LjMgNDEuNiA0Ny42IDAgOTEuMi04LjUgMTI4LjItMjMuNmMzNy43LTE1LjQgNjYuNy0zOS44IDgyLjMtNzYuNGM0Mi41LTM2LjEgNjMuOC04MC44IDY1LjgtMTMwLjJjLS4xLTIuMi0uMi00LjYtLjMtNi41Yy0zLjQtNDEuNS0xNS41LTc5LjQtMzUuOS0xMDkuNC0yMC42LTMwLjEtNDcuNS00OS40LTc4LjUtNjAuMi0yMy45LTguNS00OS4yLTEyLjgtNzUuMy0xMy41LTQ2LjMgMS43LTkxLjQgMTUuNC0xMjkuMiAzOS40QzE0My42IDg2LjYgMjk5LjggNDQ0LjkgNTQ0LjMgMzkxLjhjLTYuMyAzLjgtMTIuNiA3LjUtMTkgMTAuOWMtMzYuNyAyMC40LTc3LjggMzcuNC0xMjEuNSA0OWM0LjIgMS4zIDguNCAyLjcgMTIuNiA0LjJjNDMuMyAxNS44IDg2LjcgMzEuNyAxMjcuNyA1MC40bDEuMy0uMmMtNzcuOSA3Mi41LTE1MS45IDEwMC4xLTIyNC4zIDEwMC4xLTc2LjYgMC0xNzEuNC01NS44LTIyMi40LTE1OC40Yy02LjUtMTMtMTIuOC0yNi41LTE4LjgtNDAuNEM1MC43IDQwNy43IDAgNDM3LjIgMCA0NjQuNWMwIDMzLjMgNDAuMSAzMy4zIDQwLjEgMzMuM2M0Ni4zIDAgMTQwLjYgMC4zIDE0MC42IDAuMyAxLjQgOS41IDMuNCAxOC41IDUuNiAyNy4yYy0xOC4zIDE2LjctMzcgMjcuMy01Ny4xIDM0LjRjLTMuOCAxLjMtNy41IDIuNi0xMS4zIDMuOWMtNzguNyAxMy45LTE1MC43IDIwLjgtMjE1LjMgMjAuOC0xMi42IDAtMjguMy0yLjEtNDMuNi02LjJjLTM5LjQtMTAuNi02Ny40LTI4LTgyLjUtNDguNEM1LjggNDM0LjUgMCA0MTcuOCAwIDQxMi44YzAtNC41IDIuMy04LjUgNi44LTExLjVjMjcuMi0xOC4yIDYwLjEtMzUuMiA4Ny44LTQ5LjZsLS4yLS4yYy0xMC41LTMuNy0yMS4yLTcuMi0zMS45LTEwLjZjLTE1LjYtNC45LTMxLjgtOC42LTQ4LjItMTEuMmwtLjQtLjJhODcuMSA4Ny4xIDAgMCAxLTIxLjQtNS40Yy00Ni44LTE2LjMtODQuMi0zNC44LTg0LjItMzQuOGwzMS4yLTE1LjZjNDMuOS0yMS44IDg2LjYtMzcuNSAxMjUuNi00Ni41Yy0xLjgtMi40LTMuNS00LjktNS4yLTcuNGMxLjctMi40IDMuNC00LjkgNS4yLTcuNGw3My43LTI3LjJjLTczLjItMTAuNy0xNDkuNi02MS4zLTE4NC4yLTk2LjNjLTIxLjctMjIuMi0zNi40LTQ1LjktNDQtNzEuNGMwLTEyLjcgNS4zLTI1LjEgMTcuNS0zMy4yYzEwLjktNy40IDI1LjItOS42IDM3LjgtMy44YzEyLjYgNS44IDE5LjEgMTguNiAxNC45IDMxLjJjLTcuOSAxOS41LTE5LjcgMzYuNC0zNS42IDUwLjFjMTcuNyAxMiAyOC4zIDE5LjMgNDAgMjIuNnptLTEyOC0zMi4yYy02LjUtMjIuOS0xMy45LTQ1LjctMjIuMi02Ny44Yy04LjMtMjIuMi0xNy43LTQzLjctMjctNjQuNmMtMTIuNC0yNS42LTE4LjgtNTItMTguOC03OS41YzAtMjkuMyA2LjEtNTguMSA0MS43LTc3LjdjMjguNC0xNi4xIDU2LjMtMTkuNiA4My4xLTEwLjZjNDcuMyAxNy42IDcxLjggNzcuNCA0MyAxNTcuOGwtLjIuMiIvPjwvc3ZnPg==');
+            padding-left: 0; /* Elimina el padding izquierdo por defecto */
+            line-height: 2; /* Espaciado entre líneas para mejor legibilidad */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Propiedades CSS separados</h2>
+    <div class="list-separado">
+        <ul>
+            <li>Lápiz</li>
+            <li>Plumón</li>
+            <li>Goma</li>
+            <li>Cartulina</li>
+        </ul>
+    </div>
+
+    <hr> <h2>Propiedades CSS juntas</h2>
+    <div class="list-junta">
+        <ul>
+            <li>Lápiz</li>
+            <li>Plumón</li>
+            <li>Goma</li>
+            <li>Cartulina</li>
+        </ul>
+    </div>
+
+</body>
+</html>
